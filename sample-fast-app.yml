@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: fast-app
-          image: nahiyan83bjit/collections:flask_app
+          image: nahiyanswe/simple-fast-app
           ports:
             - containerPort: 8080
 ---
