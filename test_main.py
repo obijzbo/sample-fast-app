@@ -17,7 +17,7 @@ def test_read_root():
     response = client.get("/")
     assert response.status_code == 200
     assert "Hello" in response.text
-    assert "sample fast app to demostrate CICD with jenkins, docker and kubernetes." in response.text
+    assert "sample fast app to demonstrate CICD with Jenkins, Docker, and Kubernetes." in response.text
 
 if __name__ == "__main__":
     pytest.main()
