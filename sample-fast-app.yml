@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: fast-app
-          image: nahiyanswe/simple-fast-app
+          image: APP_IMAGE_NAME:BUILD_VERSION
           ports:
             - containerPort: 8080
 ---

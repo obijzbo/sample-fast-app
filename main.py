@@ -1,3 +1,7 @@
+"""
+This module defines a FastAPI app that serves a simple HTML page.
+"""
+
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import uvicorn
@@ -6,6 +10,9 @@ app = FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
 def read_root():
+    """
+    Return an HTML response for the root endpoint.
+    """
     html_content = """
     <html>
     <head>
@@ -13,7 +20,7 @@ def read_root():
     </head>
     <body>
         <h1>Hello</h1>
-        <p>This is a sample fast app to demostrate CICD with jenkins, docker and kubernetes.</p>
+        <p>This is a sample fast app to demonstrate CICD with Jenkins, Docker, and Kubernetes.</p>
     </body>
     </html>
     """
